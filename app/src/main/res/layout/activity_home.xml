@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:background="@drawable/meeting"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"/>
+
+
+
+    <TextView
+        android:id="@+id/txtSingOut"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignRight="@+id/layout1"
+        android:onClick="showAlertDialog"
+        android:text="Sing Out"
+        />
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="128dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="60dp"
+        app:srcCompat="@drawable/txt" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:id="@+id/layout1">
+
+        <Button
+            android:id="@+id/profileButton"
+            android:background="#cf5a20"
+            android:textColor="#dbdae3"
+            android:drawableTop="@drawable/ic_account_circle_black_24dp"
+            android:layout_width="140dp"
+            android:paddingTop="25dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="120dp"
+            android:text="Profile" />
+
+        <Button
+            android:id="@+id/createButton"
+            android:background="#37bcc9"
+            android:textColor="#dbdae3"
+            android:drawableTop="@drawable/ic_create_black_24dp"
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:paddingTop="25dp"
+            android:text="New meeting" />
+
+
+
+    </LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_below="@+id/layout1"
+    android:layout_centerHorizontal="true"
+    android:textColor="@android:color/white"
+    android:textSize="19dp"
+    android:textStyle="bold"
+    android:text="Meeting list"
+    />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="360dp"
+        android:scrollbars="vertical"
+        android:layout_centerHorizontal="true"
+        tools:listitem="@layout/row_layout"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Meetings App</string>
+
+    <string name="user_data">userData</string>
+
+    <string name="authentication_complete">Authentication has been completed!</string>
+
+    <string name="authentication_failed">Authentication Failed!</string>
+
+    <string name="register_complete"> has been successfully!</string>
+
+    <string name="blank_spaces">You can`t leave  any blank spaces!</string>
+
+</resources>

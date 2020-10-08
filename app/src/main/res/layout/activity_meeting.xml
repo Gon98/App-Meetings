@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColorHint="@android:color/white"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:hint="Your Meetings"
+        />
+
+    <EditText
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_business_center_black_24dp"
+        android:ems="13"
+        android:hint=" Company"
+        android:inputType="text"
+        android:textColorHint="#656d7e" />
+
+    <EditText
+        android:id="@+id/dataTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/company"
+        android:layout_marginTop="19dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="13"
+        android:textColorHint="#656d7e"
+        android:background="#11000000"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_access_time_black_24dp"
+        android:hint=" Data/Time"/>
+
+
+    <EditText
+        android:id="@+id/parameters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="10"
+        android:gravity="start|top"
+        android:layout_below="@+id/dataTime"
+        android:layout_marginTop="19dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="15"
+        android:textColorHint="#656d7e"
+        android:background="#11000000"
+        android:inputType="textMultiLine"
+        android:drawableLeft="@drawable/ic_subdirectory_arrow_right_black_24dp"
+        android:hint=" Parameters"/>
+    <TextView
+        android:id="@+id/msgBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/parameters"
+        android:layout_marginTop="217dp"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+
+
+
+    <Button
+        android:id="@+id/meetingButton"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/msgBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:background="#cf5a20"
+        android:textColor="#dbdae3"
+        android:text="New Meeting" />
+
+</RelativeLayout>
